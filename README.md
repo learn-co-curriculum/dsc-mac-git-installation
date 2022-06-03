@@ -1,19 +1,48 @@
-# Setting up a Professional Data Science Environment - MacOS Installation
+# Installing Git - Mac
 
 ## Introduction
 
-There are two major pieces we need to install in order to set you up for success as a professional data scientist! In this lesson, we will be installing Git and Anaconda for MacOS.
+These are instructions for installing Git on macOS (formerly known as OS X) operating systems, i.e. Mac computers. If you use a different operating system, locate the appropriate alternative instructions.
 
 ## Objectives
 
 You will be able to:
 
-* Install Git
-* Install Anaconda
+- Check your current Git installation
+- Install or update Git as needed
 
-Please note - the exact names and versions will change over time.
+## Checking Your Git Installation
 
-## Installing Git
+Mac computers come with Git installed by default. If you already have version 2.23 or later installed on your computer, you can skip the rest of the steps in this lesson.
+
+1. Open a terminal window
+    - When we ask you to use the terminal, we mean the “Terminal” app in the “Utilities” folder within your “Applications” folder - or, find the "Terminal" app in your Launchpad (often found in a subdirectory named "Other")
+2. Type `git --version` and hit Enter
+   - It should print out the version of git you are running
+
+If you get a message that says "command not found" when you run this, that means you need to **install** Git. If it prints out a version, you need to look at that version to determine next steps.
+
+The version must be at least 2.23. In other words, this version will work:
+
+```
+git version 2.23.1
+```
+
+And so will this version:
+
+```
+git version 2.34.1
+```
+
+But this version will not work and needs to be **upgraded**:
+
+```
+git version 2.22.1
+```
+
+## Installing or Upgrading Git
+
+If you either don't have Git installed or have an old version, the steps to correct this are essentially the same. You'll install Git and overwrite the old version if needed.
 
 If you are comfortable with the command line and have installed <a href="https://brew.sh/" target="_blank"> homebrew</a>, you should install Git by running the command `brew install git` in a terminal window. If you have no idea what that last sentence meant, please disregard and follow the below steps.
 
@@ -36,60 +65,14 @@ Please also reference the image screengrabs for more detail below.
 5. When the installation is complete, click the "Close" button
     - If the installation window asks if you want to move the installer .pkg file to trash, you can click “Move to Trash”
 
-#### Git Installation Step-by-Step:
+### Git Installation Step-by-Step:
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQtsPSXRa47q3beYt81S9lchOz5ZC5vrqK324GH1GuGGQXSALFfpBSF_VWVcm8GrQNqvGfjxZeohx5I/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ### Confirming Your Git Installation
 
-To confirm you have installed Git successfully:
-
-1. Open a terminal window
-
-    - When we ask you to use the terminal, we mean the “Terminal” app in the “Utilities” folder within your “Applications” folder - or, find the "Terminal" app in your Launchpad (often found in a subdirectory named "Other")
-
-2. Type `git --version`: It should return the version of git you are running
-
----
-
-## Installing Anaconda 
-
-The easiest way to get set up with Python and Jupyter Notebook so you can start coding is to install the Anaconda distribution. 
-
-### Overview:
-
-Please also reference the image screengrabs for more detail below.
-
-1. Download the latest version of Anaconda <a href="https://www.anaconda.com/products/individual" target="_blank">here</a>
-2. Open the pkg file once it has downloaded to open the Anaconda installer
-3. Click "Continue" to run the package to determine if the software can be installed
-4. When the Installation window opens, click "Continue"
-5. Read the Read Me, then click "Continue"
-6. Accept the license by clicking "Continue", then click "Agree" in the pop-up window
-7. Click "Install" to install the software
-    - You may need to enter your password when prompted
-    - You can ignore any supplementary materials advertised, such as PyCharm
-8. Click "Close" when the installation was completed successfully
-    - If the installation window asks if you want to move the installer .pkg file to trash, you can click “Move to Trash”
-
-#### Anaconda Installation Step-by-Step:
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ5d1LpSJt8OnoANlTfAHZg8ff4zVS22HPV1_98k8bGRQEotl686kSjzqEi_vjhXudMB4ui9i_wBheJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-### Confirming Your Anaconda Installation
-
-To confirm you have installed Anaconda successfully:
-
-1. Open a terminal window
-
-2. Type `conda info`: It should return a table of details about your conda installation
-
-## Confirmation
-
-This image shows what it should look like when you confirm both your Git and Anaconda installs (although version numbers and details may change):
-
-<img src="images/mac-confirm-install.png" width="500">
+Run the same command as described in the "Checking Your Git Installation" section above, `git --version`. If it is still not returning an appropriate version, try repeating the setup steps or searching for troubleshooting advice online.
 
 ## Summary
 
-Congratulations! If you've gotten this far and everything has worked, you have successfully installed Git and Anaconda on your Mac! 
+Congratulations! If you've gotten this far and everything has worked, you have successfully installed Git on your Mac!
